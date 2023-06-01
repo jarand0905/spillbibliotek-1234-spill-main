@@ -1,0 +1,93 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  body {
+    background-image: url('/interface/img/giphy.gif');
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding: 3rem 0;
+    color: purple;
+    margin: 0;
+  }
+  
+  h1, h2, h3, button {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  nav {
+    background-color: #bada55;
+    padding: 1rem;
+  }
+  
+  nav h1 {
+    margin: 0;
+    font-size: 5rem;
+    text-shadow: 5px 5px 0 #ff00ff;
+    animation: rainbow 2s infinite;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      color: red;
+    }
+    25% {
+      color: orange;
+    }
+    50% {
+      color: yellow;
+    }
+    75% {
+      color: green;
+    }
+    100% {
+      color: blue;
+    }
+  }
+  
+
+  
+  .games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .game {
+    width: 300px;
+    background-color: #00ffff;
+    border: 10px solid #f00;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 10px 10px 0 #f0f, -10px -10px 0 #0f0;
+  }
+  
+  .play-button {
+    background-color: #f00;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 2rem;
+    text-shadow: 2px 2px 0 #0ff;
+    box-shadow: 3px 3px 0 #0f0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .play-button:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
+  
